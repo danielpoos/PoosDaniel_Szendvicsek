@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button searchA,insertA;
-    private EditText priceET;
-
+    private static EditText priceET;
+    public static int money = Integer.parseInt(priceET.getText().toString());
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
